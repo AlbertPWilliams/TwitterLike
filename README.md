@@ -1,7 +1,7 @@
 # TwitterLike
 ## TwitterLike application.
 
-### To help you with the assessment Igor I'll list the items this includes:
+### To help you with the assessment Igor I've commented most of teh code, but I'll list the items I covered here also:
 
 1.  Controllers
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
@@ -15,12 +15,13 @@
   - User 2: un: albert pw: password
   - User 3: un: ava pw: password
 7.  I deployed the application to PWS, but had issues. These issues seem to be common & may require me to use older versions of Tomcat & Grails.
-8.  A unit test for Status (using Mocks) (This is flaky & needs more work)
+8.  A unit test for Status, testing against the Status constraints (uses Spock, Mocks) (This is flaky & needs more work)
 9.  A unit test for the REST LocationService (This is flaky & needs more work)
 10.  TODO Externalise strings into .properties, I started to do this.
 11.  TODO Better logging (log4j). I started to look at this also.
 12.  TODO Better frontend (using twitter bootstrap for styling).
 13.  TODO I was thinking of trying to use OpenAuth.
+14.  TODO More Unit testing & Stubs & Mocks.
 
 **My immediate focus will be finding out the issues with deploying successfully on PWS.**
 
