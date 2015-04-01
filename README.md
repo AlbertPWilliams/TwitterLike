@@ -20,6 +20,9 @@
 12.  TODO Better frontend (using twitter bootstrap for styling).
 
 My immediate focus will be fimding out the issues with deploying si=uccessfully on PWS.
+
 I sent a picture of the logs in a previous email.
+
 Kind regards,
+
 Albert
