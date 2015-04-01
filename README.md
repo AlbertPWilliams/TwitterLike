@@ -1,7 +1,7 @@
 # TwitterLike
 ## TwitterLike application.
 
-### To help you with the assessment Igor I've commented most of teh code, but I'll list the items I covered here also:
+### To help you with the assessment Igor I've commented most of the code, but I'll list the items I covered here also:
 
 1.  Controllers
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
