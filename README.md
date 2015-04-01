@@ -21,7 +21,9 @@
 
 My immediate focus will be fimding out the issues with deploying si=uccessfully on PWS.
 
-I sent a picture of the logs in a previous email.
+I sent a picture of the logs in a previous email, any help appreciated. But I know you are very busy.
+
+I'll research (i.e. google) the problem.
 
 Kind regards,
 
