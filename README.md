@@ -21,7 +21,7 @@
 11.  TODO Better logging (log4j). I started to look at this also.
 12.  TODO Better frontend (using twitter bootstrap for styling).
 
-**My immediate focus will be finding out the issues with deploying si=uccessfully on PWS.**
+**My immediate focus will be finding out the issues with deploying successfully on PWS.**
 
 I sent a picture of the logs in a previous email, any help appreciated. But I know you are very busy.
 
