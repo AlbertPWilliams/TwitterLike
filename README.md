@@ -7,8 +7,8 @@
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
 3.  Persistence layer uses GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service (PostgreSQL).
 4.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
-4.  A REST endpoint
-5.  Marshaller of the REST service
+4.  A REST endpoint (JSON & XML)
+5.  Marshaller of the REST service, removing some redundant fields and changing others. Just showing that I looked into this.
 6.  I change the url of the endpoint to a more convention friendly url.
 6.  Authentication with login. You will need these usernames and passwords to login and test the twitter follow functionality:
   - Your details are un: igor pw: password
