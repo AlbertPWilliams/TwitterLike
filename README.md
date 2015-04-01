@@ -6,7 +6,9 @@
 1.  Controllers
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
 3.  Persistence layer uses GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service (PostgreSQL).
-4.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
+4.  pom.xml was generated for maven building.
+5.  war was generated for single file deploy.
+5.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
 4.  A REST endpoint (JSON & XML)
 5.  Marshaller of the REST service, changing fields of the response. Just showing that I looked into this.
 6.  Created rendering beans for both rest response as single object & mlutiple/collection (i.e. removing some redundant fields).
