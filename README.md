@@ -5,7 +5,8 @@
 
 1.  Controllers
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
-3.  Presistance layer is GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service.
+3.  Presistance layer uses GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service.
+4.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
 4.  A REST endpoint
 5.  Marshaller of the REST service
 6.  Authentication with login. You will need these usernames and passwords to login and test the twitter follow functionality:
