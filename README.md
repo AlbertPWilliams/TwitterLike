@@ -9,6 +9,7 @@
 4.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
 4.  A REST endpoint
 5.  Marshaller of the REST service
+6.  I change the url of the endpoint to a more convention friendly url.
 6.  Authentication with login. You will need these usernames and passwords to login and test the twitter follow functionality:
   - Your details are un: igor pw: password
   - User 2: un: albert pw: password
