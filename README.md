@@ -10,11 +10,11 @@
 4.  A REST endpoint (JSON & XML)
 5.  Marshaller of the REST service, changing fields of the response. Just showing that I looked into this.
 6.  Created rendering beans for both rest response as single object & mlutiple/collection (i.e. removing some redundant fields).
-6.  I also change the url of the endpoint to a more convention friendly url.
-6.  Authentication with login against regex of . You will need these usernames and passwords to login and test the twitter follow functionality:
-  - Your details are un: igor pw: password
-  - User 2: un: albert pw: password
-  - User 3: un: ava pw: password
+6.  I also change the url of the endpoint to a more convention friendly url (regex of urls).
+6.  Authentication with login & against regex of urls (Spring Security Core plugin). You will need these usernames and passwords to login and test the twitter follow functionality:
+  - Your details are  **un: igor pw: password**
+  - User 2: **un: albert pw: password**
+  - User 3: **un: ava pw: password**
 7.  I deployed the application to PWS, but had issues. These issues seem to be common & may require me to use older versions of Tomcat & Grails.
 8.  A unit test for Status, testing against the Status constraints (uses Spock, Mocks) (This is flaky & needs more work)
 9.  A unit test for the REST LocationService (This is flaky & needs more work)
