@@ -20,6 +20,7 @@
 10.  TODO Externalise strings into .properties, I started to do this.
 11.  TODO Better logging (log4j). I started to look at this also.
 12.  TODO Better frontend (using twitter bootstrap for styling).
+13.  TODO I was thinking of trying to use OpenAuth.
 
 **My immediate focus will be finding out the issues with deploying successfully on PWS.**
 
