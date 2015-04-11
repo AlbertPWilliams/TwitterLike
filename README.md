@@ -7,7 +7,7 @@
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
 3.  Persistence layer uses GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service (PostgreSQL).
 4.  pom.xml was generated for building from maven.
-5.  war was generated for single file deploy.
+5.  war was generated for single file deploy (NOTE: I did this to PWS using CLI, GGTS dosen't direct deploy for Grails 2.4.4. This took a long time to figure out that it was a known issue)
 5.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
 4.  A REST endpoint (JSON & XML)
 5.  Marshaller of the REST service, changing fields of the response. Just showing that I looked into this.
@@ -27,19 +27,24 @@
 
 As mentioned previously by email (I sent a picture of logs on PWS), there was a number of issues encountered.
 
-There included, but were not limited to:
-Jira issue - Tar packaged grails application cannot resolve /index
+They included, but were not limited to:
+
+**Jira issue - Tar packaged grails application cannot resolve /index**
 https://jira.grails.org/browse/GRAILS-12076
 
-Problems validating blank constraints with spock in a grails application
+**Problems validating blank constraints with spock in a grails application**
 http://stackoverflow.com/questions/19831034/problems-validating-blank-constraints-with-spock-in-a-grails-application
 
-Codehaus gone, which affected a lot of dependencies (incl. transitive dependencies) & plugins.
+**Codehaus gone, which affected a lot of dependencies (incl. transitive dependencies) & plugins.**
 http://www.codehaus.org/
 
-Not being able to deploy to PWS from GGTS.
-The latest version of GGTS has issues with deploying to PWS. The workaround is to deploy the war fro the CLI.
+**Not being able to deploy to PWS from GGTS.**
+The latest version of GGTS has issues with deploying to PWS. The workaround is to deploy the war from the CLI.
 I did this successfully. However the Jira issue mentioned above complicated things.
+
+**The latest version fo Grails 3.0.1 does not get recogines by GGTS as a Grails library**
+This also took a long time to figure out. I was trying to upgrade Grails to address the many issues encountered.
+With Pivotal removal of sponsorship this isn't expected to be addressed in teh future. 
 
 ## FINDINGS
 Though Groovy the Grails framework are very exciting to learn and work with. I find that there's way too much broken dependencies and churn between versions. The removal of Pivotal sponsorship is seen by some as a bad thing, it's seen by others as a great thing. http://blog.pivotal.io/pivotal/news-2/groovy-2-4-and-grails-3-0-to-be-last-major-releases-under-pivotal-sponsorship
