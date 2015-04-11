@@ -43,7 +43,7 @@ I did this successfully. However the Jira issue mentioned above complicated thin
 
 ## FINDINGS
 Though Groovy the Grails framework are very exciting to learn and work with. I find that there's way too much broken dependencies and churn between versions. The removal of Pivotal sponsorship is seen by some as a bad thing, it's seen by others as a great thing. http://blog.pivotal.io/pivotal/news-2/groovy-2-4-and-grails-3-0-to-be-last-major-releases-under-pivotal-sponsorship
-Personally I would not comfortable with developing enterprise software with Grails & Groovy until the issues are overcome.
+Personally I would not be comfortable developing enterprise software with Grails & Groovy until the issues are overcome.
 My experience with it has been mixed. I can see the benefit of convention over configuration on steroids, but the many interdependent technologies require a strong and committed user-base & a big developer mindshare.
 
 Kind regards,
