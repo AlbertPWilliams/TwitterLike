@@ -1,0 +1,50 @@
+Testsuite: org.cit.twitterlike.LocationServiceSpec
+Tests run: 2, Failures: 0, Errors: 2, Time elapsed: 4.544 sec
+------------- Standard Output ---------------
+--Output from test successful GET response status--
+--Output from test rest GET city--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test successful GET response status--
+--Output from test rest GET city--
+------------- ---------------- ---------------
+
+Testcase: test successful GET response status took 3.451 sec
+	Caused an ERROR
+I/O error on GET request for "http://localhost:8080/TwitterLike/api/location/2":Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/TwitterLike/api/location/2":Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at grails.plugins.rest.client.RestBuilder.invokeRestTemplate(RestBuilder.groovy:312)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:273)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:261)
+	at grails.plugins.rest.client.RestBuilder.get(RestBuilder.groovy:106)
+	at org.cit.twitterlike.LocationService.$tt__getLocation(LocationService.groovy:15)
+	at org.cit.twitterlike.LocationServiceSpec.test successful GET response status(LocationServiceSpec.groovy:30)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+
+Testcase: test rest GET city took 1.045 sec
+	Caused an ERROR
+I/O error on GET request for "http://localhost:8080/TwitterLike/api/location/1":Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/TwitterLike/api/location/1":Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at grails.plugins.rest.client.RestBuilder.invokeRestTemplate(RestBuilder.groovy:312)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:273)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:261)
+	at grails.plugins.rest.client.RestBuilder.get(RestBuilder.groovy:106)
+	at org.cit.twitterlike.LocationServiceSpec.test rest GET city(LocationServiceSpec.groovy:50)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+

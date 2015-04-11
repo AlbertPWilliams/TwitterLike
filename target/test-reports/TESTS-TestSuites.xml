@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="2" failures="0" hostname="UKDB809298" id="0" name="LocationServiceSpec" package="org.cit.twitterlike" tests="2" time="4.544" timestamp="2015-04-11T19:15:13">
+      <properties />
+
+      <testcase classname="org.cit.twitterlike.LocationServiceSpec" name="test successful GET response status" time="3.468">
+          <error message="I/O error on GET request for &quot;http://localhost:8080/TwitterLike/api/location/2&quot;:Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect" type="org.springframework.web.client.ResourceAccessException">org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8080/TwitterLike/api/location/2&quot;:Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at grails.plugins.rest.client.RestBuilder.invokeRestTemplate(RestBuilder.groovy:312)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:273)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:261)
+	at grails.plugins.rest.client.RestBuilder.get(RestBuilder.groovy:106)
+	at org.cit.twitterlike.LocationService.$tt__getLocation(LocationService.groovy:15)
+	at org.cit.twitterlike.LocationServiceSpec.test successful GET response status(LocationServiceSpec.groovy:30)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+</error>
+
+      </testcase>
+
+      <testcase classname="org.cit.twitterlike.LocationServiceSpec" name="test rest GET city" time="1.045">
+          <error message="I/O error on GET request for &quot;http://localhost:8080/TwitterLike/api/location/1&quot;:Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect" type="org.springframework.web.client.ResourceAccessException">org.springframework.web.client.ResourceAccessException: I/O error on GET request for &quot;http://localhost:8080/TwitterLike/api/location/1&quot;:Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at grails.plugins.rest.client.RestBuilder.invokeRestTemplate(RestBuilder.groovy:312)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:273)
+	at grails.plugins.rest.client.RestBuilder.doRequestInternal(RestBuilder.groovy:261)
+	at grails.plugins.rest.client.RestBuilder.get(RestBuilder.groovy:106)
+	at org.cit.twitterlike.LocationServiceSpec.test rest GET city(LocationServiceSpec.groovy:50)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:345)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+</error>
+
+      </testcase>
+
+      <system-out><![CDATA[--Output from test successful GET response status--
+--Output from test rest GET city--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test successful GET response status--
+--Output from test rest GET city--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UKDB809298" id="1" name="LocationSpec" package="org.cit.twitterlike" tests="15" time="1.006" timestamp="2015-04-11T19:15:18">
+      <properties />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test postalCode blank constraints" time="0.72" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test postalCode null constraints" time="0.016" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test cityName blank constraints" time="0.0" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test cityName null constraints" time="0.031" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode blank constraints" time="0.015" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode null constraints" time="0.02" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode max size constraints" time="0.001" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode min size constraints" time="0.016" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode matches uppercase constraints" time="0.015" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode matches alphabetic constraints" time="0.016" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints postalCode is valid" time="0.031" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints postalCode is valid" time="0.016" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints cityName is valid" time="0.015" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints countryCode is valid" time="0.016" />
+
+      <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints countryCode is valid" time="0.015" />
+
+      <system-out><![CDATA[--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--
+]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="UKDB809298" id="2" name="StatusSpec" package="org.cit.twitterlike" tests="6" time="0.204" timestamp="2015-04-11T19:15:19">
+      <properties />
+
+      <testcase classname="org.cit.twitterlike.StatusSpec" name="test message size max constraints" time="0.157" />
+
+      <testcase classname="org.cit.twitterlike.StatusSpec" name="test message size min constraints" time="0.0" />
+
+      <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is valid" time="0.016" />
+
+      <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is valid" time="0.0" />
+
+      <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is valid" time="0.015" />
+
+      <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is size" time="0.016" />
+
+      <system-out><![CDATA[--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--
+]]></system-out>
+
+      <system-err><![CDATA[--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--
+]]></system-err>
+
+  </testsuite>
+</testsuites>

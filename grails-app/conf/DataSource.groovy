@@ -48,11 +48,16 @@ environments {
     }
     production {
         dataSource {
-			driverClassName = "org.postgresql.Driver"
-			username = "ytogegvv"
-			password = "gFKEosIKU3vHG7JU8AmfMQmwCbsUhFdO"
-            dbCreate = "update"
-			url = "jdbc:postgres://ytogegvv:gFKEosIKU3vHG7JU8AmfMQmwCbsUhFdO@babar.elephantsql.com:5432/ytogegvv"
+//			driverClassName = "org.postgresql.Driver"
+//			username = "ytogegvv"
+//			password = "gFKEosIKU3vHG7JU8AmfMQmwCbsUhFdO"
+//          dbCreate = "update"
+//			url = "jdbc:postgres://ytogegvv:gFKEosIKU3vHG7JU8AmfMQmwCbsUhFdO@babar.elephantsql.com:5432/ytogegvv"
+			driverClassName = "org.h2.Driver"
+			username = "sa"
+			password = ""
+			dbCreate = "update"
+			url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE"
             properties {
                // See http://grails.org/doc/latest/guide/conf.html#dataSource for documentation
                jmxEnabled = true

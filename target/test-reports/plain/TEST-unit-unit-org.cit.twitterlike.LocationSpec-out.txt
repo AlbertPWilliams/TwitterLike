@@ -1,0 +1,15 @@
+--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--

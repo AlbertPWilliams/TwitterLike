@@ -14,10 +14,19 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="${assetPath(src: 'apple-touch-icon-retina.png')}">
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
+		<link rel="stylesheet" href="${resource(dir: 'css', file: 'styles.css')}" type="text/css"> <!-- The Bootstrap template I added myself -->
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
+		<!-- 
+		  	This is some sample styling that extends the default grails & bootstrap styling.
+	  		This is mainly to show my understanding of front-end UI HTML/CSS styling.
+	 	-->
+		<div id="grailsLogo" role="banner">
+			<a href="#">
+				<h1>Welcome to TwitterLike!</h1>
+			</a>
+		</div>
 		<sec:ifLoggedIn>
     		<strong>Welcome <sec:username/></strong><br/><br/>
 		</sec:ifLoggedIn>
@@ -25,7 +34,8 @@
 		    <strong>Welcome Guest</strong><br/><br/>
 		</sec:ifNotLoggedIn>
 		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
+		<div class="footer" role="contentinfo">
+		Application Development Frameworks - Albert Williams (R00131085)</div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
 </html>

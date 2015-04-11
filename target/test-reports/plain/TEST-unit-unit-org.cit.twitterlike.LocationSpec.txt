@@ -1,0 +1,52 @@
+Testsuite: org.cit.twitterlike.LocationSpec
+Tests run: 15, Failures: 0, Errors: 0, Time elapsed: 1.006 sec
+------------- Standard Output ---------------
+--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--
+------------- ---------------- ---------------
+
+Testcase: test postalCode blank constraints took 0.72 sec
+Testcase: test postalCode null constraints took 0.016 sec
+Testcase: test cityName blank constraints took 0 sec
+Testcase: test cityName null constraints took 0.031 sec
+Testcase: test countryCode blank constraints took 0.015 sec
+Testcase: test countryCode null constraints took 0.02 sec
+Testcase: test countryCode max size constraints took 0.001 sec
+Testcase: test countryCode min size constraints took 0.016 sec
+Testcase: test countryCode matches uppercase constraints took 0.015 sec
+Testcase: test countryCode matches alphabetic constraints took 0.016 sec
+Testcase: test location multiple constraints postalCode is valid took 0.031 sec
+Testcase: test location multiple constraints postalCode is valid took 0.016 sec
+Testcase: test location multiple constraints cityName is valid took 0.015 sec
+Testcase: test location multiple constraints countryCode is valid took 0.016 sec
+Testcase: test location multiple constraints countryCode is valid took 0.015 sec

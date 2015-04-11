@@ -1,0 +1,25 @@
+Testsuite: org.cit.twitterlike.StatusSpec
+Tests run: 6, Failures: 0, Errors: 0, Time elapsed: 0.204 sec
+------------- Standard Output ---------------
+--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--
+------------- ---------------- ---------------
+
+Testcase: test message size max constraints took 0.157 sec
+Testcase: test message size min constraints took 0 sec
+Testcase: test status multiple constraints message is valid took 0.016 sec
+Testcase: test status multiple constraints message is valid took 0 sec
+Testcase: test status multiple constraints message is valid took 0.015 sec
+Testcase: test status multiple constraints message is size took 0.016 sec

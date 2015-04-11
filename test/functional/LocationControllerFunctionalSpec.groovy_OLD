@@ -1,0 +1,42 @@
+package org.cit.twitterlike
+
+import grails.plugins.rest.client.RestBuilder
+import grails.plugins.rest.client.RestResponse
+import grails.test.spock.IntegrationSpec
+import org.cit.twitterlike.Location
+import spock.lang.Shared
+
+class LocationControllerFunctionalSpec extends IntegrationSpec {
+
+//	@Shared
+//	def grailsApplication
+	
+	def setup() {
+		// Initialize DB
+//		new Location(cityName: "Waterford").save()
+	}
+
+	def cleanup() {
+	}
+
+	void "test a city in REST service"() {
+		given:
+		def test = 5
+//		RestBuilder rest = new RestBuilder()
+
+		when:
+		def test2 = 5
+//		// Testing http://localhost:8080/TwitterLike/api/location/1
+//		RestResponse response = rest.post("http://localhost:8080/${grailsApplication.metadata.'app.name'}/api/location/1") {
+//			json([
+//				city: "Cork"
+//			])
+//		}
+
+		then:
+		test == test2
+//		response.status == 200
+//		response.json.title == "Cork"
+//		Location.count == 3
+	}
+}

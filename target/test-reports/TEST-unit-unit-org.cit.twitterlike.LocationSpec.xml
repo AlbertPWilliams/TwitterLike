@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UKDB809298" name="org.cit.twitterlike.LocationSpec" tests="15" time="1.006" timestamp="2015-04-11T19:15:18">
+  <properties />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test postalCode blank constraints" time="0.72" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test postalCode null constraints" time="0.016" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test cityName blank constraints" time="0.0" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test cityName null constraints" time="0.031" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode blank constraints" time="0.015" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode null constraints" time="0.02" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode max size constraints" time="0.001" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode min size constraints" time="0.016" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode matches uppercase constraints" time="0.015" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test countryCode matches alphabetic constraints" time="0.016" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints postalCode is valid" time="0.031" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints postalCode is valid" time="0.016" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints cityName is valid" time="0.015" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints countryCode is valid" time="0.016" />
+  <testcase classname="org.cit.twitterlike.LocationSpec" name="test location multiple constraints countryCode is valid" time="0.015" />
+  <system-out><![CDATA[--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--
+]]></system-out>
+  <system-err><![CDATA[--Output from test postalCode blank constraints--
+--Output from test postalCode null constraints--
+--Output from test cityName blank constraints--
+--Output from test cityName null constraints--
+--Output from test countryCode blank constraints--
+--Output from test countryCode null constraints--
+--Output from test countryCode max size constraints--
+--Output from test countryCode min size constraints--
+--Output from test countryCode matches uppercase constraints--
+--Output from test countryCode matches alphabetic constraints--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints postalCode is valid--
+--Output from test location multiple constraints cityName is valid--
+--Output from test location multiple constraints countryCode is valid--
+--Output from test location multiple constraints countryCode is valid--
+]]></system-err>
+</testsuite>

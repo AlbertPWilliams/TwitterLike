@@ -1,0 +1,2 @@
+--Output from test successful GET response status--
+--Output from test rest GET city--

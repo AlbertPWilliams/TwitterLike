@@ -1,0 +1,6 @@
+--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--

@@ -117,20 +117,66 @@ log4j.main = {
 }
 
 
-// Added by the Spring Security Core plugin:
-grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.cit.twitterlike.Person'
-grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.cit.twitterlike.PersonAuthority'
-grails.plugin.springsecurity.authority.className = 'org.cit.twitterlike.Authority'
-grails.plugin.springsecurity.controllerAnnotations.staticRules = [
-	'/':                              ['permitAll'],
-	'/index':                         ['permitAll'],
-	'/index.gsp':                     ['permitAll'],
-	'/assets/**':                     ['permitAll'],
-	'/**/js/**':                      ['permitAll'],
-	'/**/css/**':                     ['permitAll'],
-	'/**/images/**':                  ['permitAll'],
-	'/**/favicon.ico':                ['permitAll'],
-	'/**/**':                	  	  ['permitAll'],
-	'/**':                	  		  ['permitAll']
-]
+// Environment specific settings to allow for testing the Location REST API without authentication.
+environments {
+	development {
+		// Added by the Spring Security Core plugin:
+		grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.cit.twitterlike.Person'
+		grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.cit.twitterlike.PersonAuthority'
+		grails.plugin.springsecurity.authority.className = 'org.cit.twitterlike.Authority'
+		grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+			'/':                              ['permitAll'],
+			'/index':                         ['permitAll'],
+			'/index.gsp':                     ['permitAll'],
+			'/assets/**':                     ['permitAll'],
+			'/**/js/**':                      ['permitAll'],
+			'/**/css/**':                     ['permitAll'],
+			'/**/images/**':                  ['permitAll'],
+			'/**/favicon.ico':                ['permitAll'],
+			'/**/**':                	  	  ['permitAll'],
+			'/**':                	  		  ['permitAll'],
+			'/api/location/**':               ['permitAll'], // Allow for integration testing service e.g. http://localhost:8080/TwitterLike/api/location/1
+			'/api/**':                     	  ['permitAll']
+		]
+	}
+	test {
+		// Added by the Spring Security Core plugin:
+		grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.cit.twitterlike.Person'
+		grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.cit.twitterlike.PersonAuthority'
+		grails.plugin.springsecurity.authority.className = 'org.cit.twitterlike.Authority'
+		grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+			'/':                              ['permitAll'],
+			'/index':                         ['permitAll'],
+			'/index.gsp':                     ['permitAll'],
+			'/assets/**':                     ['permitAll'],
+			'/**/js/**':                      ['permitAll'],
+			'/**/css/**':                     ['permitAll'],
+			'/**/images/**':                  ['permitAll'],
+			'/**/favicon.ico':                ['permitAll'],
+			'/**/**':                	  	  ['permitAll'],
+			'/**':                	  		  ['permitAll'],
+			'/api/location/**':               ['permitAll'], // Allow for integration testing service e.g. http://localhost:8080/TwitterLike/api/location/1
+			'/api/**':                     	  ['permitAll']
+		]
+	}
+	production {
+		// Added by the Spring Security Core plugin:
+		grails.plugin.springsecurity.userLookup.userDomainClassName = 'org.cit.twitterlike.Person'
+		grails.plugin.springsecurity.userLookup.authorityJoinClassName = 'org.cit.twitterlike.PersonAuthority'
+		grails.plugin.springsecurity.authority.className = 'org.cit.twitterlike.Authority'
+		grails.plugin.springsecurity.controllerAnnotations.staticRules = [
+			'/':                              ['permitAll'],
+			'/index':                         ['permitAll'],
+			'/index.gsp':                     ['permitAll'],
+			'/assets/**':                     ['permitAll'],
+			'/**/js/**':                      ['permitAll'],
+			'/**/css/**':                     ['permitAll'],
+			'/**/images/**':                  ['permitAll'],
+			'/**/favicon.ico':                ['permitAll'],
+			'/**/**':                	  	  ['permitAll'],
+			'/**':                	  		  ['permitAll']
+		]
+	}
+}
+
 

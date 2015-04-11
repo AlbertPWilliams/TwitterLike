@@ -15,6 +15,6 @@ class LocationControllerSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
+    void "test location"() {
     }
 }

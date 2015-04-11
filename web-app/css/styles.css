@@ -1,0 +1,24 @@
+/*
+  This is some sample styling that extends the bootstrap styling.
+  This is mainly to show my understanding of front-end UI HTML/CSS styling.
+*/
+
+body {
+	background-color: #fff;
+	color: darkblue;
+	text-align: center !important; /* Important was needed because of specifity in twitter bootstrap & I didn't wish to change the default bootstrap styles. Simply augment them. */
+}
+
+#grailsLogo {
+	background: #ffbf80;
+	text-align: center !important; /* Important was needed because of specifity in twitter bootstrap & I didn't wish to change the default bootstrap styles. Simply augment them. */
+}
+
+#grailsLogo h1 {
+    color: darkblue !important; /* Important was needed because of specifity in twitter bootstrap & I didn't wish to change the default bootstrap styles. Simply augment them. */
+}
+
+.footer {
+	background: #ffbf80 !important; /* Important was needed because of specifity in twitter bootstrap & I didn't wish to change the default bootstrap styles. Simply augment them. */
+	text-align: right;
+}

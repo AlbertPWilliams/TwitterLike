@@ -81,6 +81,15 @@
             
         </dependency>
         
+        <dependency>
+            <groupId>org.gebish</groupId>
+            <artifactId>geb-spock</artifactId>
+            <version>0.10.0</version>
+            <scope>test</scope>
+            
+            
+        </dependency>
+        
         
         <dependency>
             <groupId>org.grails.plugins</groupId>
@@ -134,6 +143,26 @@
         
         <dependency>
             <groupId>org.grails.plugins</groupId>
+            <artifactId>geb</artifactId>
+            <version>0.10.0</version>
+            <scope>compile</scope>
+            
+            <type>zip</type>
+            
+        </dependency>
+        
+        <dependency>
+            <groupId>org.grails.plugins</groupId>
+            <artifactId>rest-client-builder</artifactId>
+            <version>2.0.0</version>
+            <scope>compile</scope>
+            
+            <type>zip</type>
+            
+        </dependency>
+        
+        <dependency>
+            <groupId>org.grails.plugins</groupId>
             <artifactId>hibernate4</artifactId>
             <version>4.3.6.1</version>
             <scope>runtime</scope>
@@ -165,8 +194,28 @@
         <dependency>
             <groupId>org.grails.plugins</groupId>
             <artifactId>twitter-bootstrap</artifactId>
-            <version>3.3.1</version>
+            <version>3.3.4</version>
             <scope>runtime</scope>
+            
+            <type>zip</type>
+            
+        </dependency>
+        
+        <dependency>
+            <groupId>org.grails.plugins</groupId>
+            <artifactId>geb</artifactId>
+            <version>0.10.0</version>
+            <scope>test</scope>
+            
+            <type>zip</type>
+            
+        </dependency>
+        
+        <dependency>
+            <groupId>org.grails.plugins</groupId>
+            <artifactId>code-coverage</artifactId>
+            <version>2.0.3-3</version>
+            <scope>test</scope>
             
             <type>zip</type>
             

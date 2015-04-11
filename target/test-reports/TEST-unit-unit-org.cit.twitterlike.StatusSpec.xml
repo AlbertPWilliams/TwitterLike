@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="UKDB809298" name="org.cit.twitterlike.StatusSpec" tests="6" time="0.204" timestamp="2015-04-11T19:15:19">
+  <properties />
+  <testcase classname="org.cit.twitterlike.StatusSpec" name="test message size max constraints" time="0.157" />
+  <testcase classname="org.cit.twitterlike.StatusSpec" name="test message size min constraints" time="0.0" />
+  <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is valid" time="0.016" />
+  <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is valid" time="0.0" />
+  <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is valid" time="0.015" />
+  <testcase classname="org.cit.twitterlike.StatusSpec" name="test status multiple constraints message is size" time="0.016" />
+  <system-out><![CDATA[--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--
+]]></system-out>
+  <system-err><![CDATA[--Output from test message size max constraints--
+--Output from test message size min constraints--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is valid--
+--Output from test status multiple constraints message is size--
+]]></system-err>
+</testsuite>

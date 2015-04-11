@@ -7,7 +7,6 @@ import grails.transaction.Transactional
 class LocationService {
 
     def serviceMethod() {
-
     }
 	
 	def getLocation(Long id) {
@@ -15,5 +14,6 @@ class LocationService {
 		def resp = new RestBuilder().get(url) {
 			header 'Authorization', 'Basic base64EncodedUsername&Password'
 		}
+		resp
 	}
 }
