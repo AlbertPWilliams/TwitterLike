@@ -39,8 +39,9 @@ http://stackoverflow.com/questions/19831034/problems-validating-blank-constraint
 http://www.codehaus.org/
 
 **Not being able to deploy to PWS from GGTS.**
-The latest version of GGTS has issues with deploying to PWS. The workaround is to deploy the war from the CLI.
+The latest version of GGTS has issues with deploying directly to PWS. The workaround is to deploy the war from the CLI.
 I did this successfully. However the Jira issue mentioned above complicated things.
+This took a very long time to figure out **(i.e. days)**, the errors given are not useful.
 
 **The latest version fo Grails 3.0.1 does not get recogines by GGTS as a Grails library**
 This also took a long time to figure out. I was trying to upgrade Grails to address the many issues encountered.
