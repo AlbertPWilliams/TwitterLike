@@ -23,7 +23,7 @@
 10.  Front-end styling (using twitter bootstrap and my own personal styling).
 13.  Transactional management was demonstrated in LocationService when the JSON location data is requested from the location service REST API. NOTE: This location data was provided from a database that I populate at startup.
 
-** CHALLENGES ENCOUNTERED **
+## CHALLENGES ENCOUNTERED
 
 As mentioned previously by email (I sent a picture of logs on PWS), there was a number of issues encountered.
 
@@ -41,7 +41,7 @@ Not being able to deploy to PWS from GGTS.
 The latest version of GGTS has issues with deploying to PWS. The workaround is to deploy the war fro the CLI.
 I did this successfully. However the Jira issue mentioned above complicated things.
 
-** FINDINGS **
+## FINDINGS
 Though Groovy the Grails framework are very exciting to learn and work with. I find that there's way too much broken dependencies and churn between versions. The removal of Pivotal sponsorship is seen by some as a bad thing, it's seen by others as a great thing. http://blog.pivotal.io/pivotal/news-2/groovy-2-4-and-grails-3-0-to-be-last-major-releases-under-pivotal-sponsorship
 Personally I would not comfortable with developing enterprise software with Grails & Groovy until the issues are overcome.
 My experience with it has been mixed. I can see the benefit of convention over configuration on steroids, but the many interdependent technologies require a strong and committed user-base & a big developer mindshare.
