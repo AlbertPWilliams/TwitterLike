@@ -6,8 +6,8 @@
 1.  Controllers
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
 3.  Persistence layer uses GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service (PostgreSQL).
-4.  pom.xml was generated for building from maven.
-5.  war was generated for single file deploy (NOTE: I did this to PWS using CLI, GGTS dosen't direct deploy for Grails 2.4.4. This took a long time to figure out that it was a known issue)
+4.  **pom.xml** was generated for building from maven.
+5.  **war** was generated for single file deploy (**NOTE:** I did this war deploy to PWS using CLI, GGTS dosen't direct deploy for Grails 2.4.4. This took a long time to figure out that it was a known issue)
 5.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
 4.  A REST endpoint (JSON & XML)
 5.  Marshaller of the REST service, changing fields of the response. Just showing that I looked into this.
@@ -19,15 +19,15 @@
   - User 3: **un: ava pw: password**
 7.  I deployed the application to PWS, but had issues. These issues seem to be common & may require me to use older versions of Tomcat & Grails.
 8.  A unit test for Status, testing against the Status constraints (uses Spock, Mocks) (This is flaky & needs more work)
-9.  A unit test for the REST LocationService (This is flaky & needs more work)
+9.  Tests for the REST LocationService, testing HTTP status codes (i.e. 200=Ok) and values epected form the JSON/XML data.
 10.  Front-end styling (using twitter bootstrap and my own personal styling).
-13.  Transactional management was demonstrated in LocationService when the JSON location data is requested from the location service REST API. NOTE: This location data was provided from a database that I populate at startup.
+13.  **Transactional management** was demonstrated in LocationService when the JSON location data is requested from the location service REST API. NOTE: This location data was provided from a database that I populate at startup.
 
 ## CHALLENGES ENCOUNTERED
 
 As mentioned previously by email (I sent a picture of logs on PWS), there was a number of issues encountered.
 
-They included, but were not limited to:
+**They included, but were not limited to:**
 
 **Jira issue - Tar packaged grails application cannot resolve /index**
 https://jira.grails.org/browse/GRAILS-12076
