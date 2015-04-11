@@ -7,7 +7,7 @@
 2.  Views, incl. use of jQuery & AJAX, plus Grails template.
 3.  Persistence layer uses GORM & I've played around with the H2 database, postgreSQL locally, and trying to use the Pivotal Web Services ElephantSQL service (PostgreSQL).
 4.  **pom.xml** was generated for building from maven.
-5.  **war** was generated for single file deploy (**NOTE:** I did this war deploy to PWS using CLI, GGTS dosen't direct deploy for Grails 2.4.4. This took a long time to figure out that it was a known issue **(i.e. days)**. The errors given were not useful.)
+5.  **war** was generated for single file deploy (**NOTE:** I did this war deploy to PWS using CLI, GGTS dosen't direct deploy for Grails 2.4.4. This took a long time to figure out that it was a known issue **(i.e. days)**. The errors given were not useful.) I even paid for more memory etc.. Just in case that was the issue. It's a known issue.
 5.  I populate multiple tables with data for the application. Namely 5 tables. authority, location, person, person_authority, status.
 4.  A REST endpoint (JSON & XML)
 5.  Marshaller of the REST service, changing fields of the response. Just showing that I looked into this.
@@ -17,7 +17,7 @@
   - Your details are  **un: igor pw: password**
   - User 2: **un: albert pw: password**
   - User 3: **un: ava pw: password**
-7.  I deployed the application to PWS, but had issues. These issues seem to be common & may require me to use older versions of Tomcat & Grails.
+7.  I deployed the application successfully to PWS.
 8.  A unit test for Status, testing against the Status constraints (uses Spock, Mocks) (This is flaky & needs more work)
 9.  Tests for the REST LocationService, testing HTTP status codes (i.e. 200=Ok) and values epected form the JSON/XML data.
 10.  Front-end styling (using twitter bootstrap and my own personal styling).
