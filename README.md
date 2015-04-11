@@ -20,17 +20,31 @@
 7.  I deployed the application to PWS, but had issues. These issues seem to be common & may require me to use older versions of Tomcat & Grails.
 8.  A unit test for Status, testing against the Status constraints (uses Spock, Mocks) (This is flaky & needs more work)
 9.  A unit test for the REST LocationService (This is flaky & needs more work)
-10.  TODO Externalise strings into .properties, I started to do this.
-11.  TODO Better logging (log4j). I started to look at this also.
-12.  TODO Better frontend (using twitter bootstrap for styling).
-13.  TODO I was thinking of trying to use OpenAuth.
-14.  TODO More Unit testing & Stubs & Mocks.
+10.  Front-end styling (using twitter bootstrap and my own personal styling).
+13.  Transactional management was demonstrated in LocationService when the JSON location data is requested from the location service REST API. NOTE: This location data was provided from a database that I populate at startup.
 
-**My immediate focus will be finding out the issues with deploying successfully on PWS.**
+** CHALLENGES ENCOUNTERED **
 
-I sent a picture of the logs in a previous email, any help appreciated. But I know you are very busy.
+As mentioned previously by email (I sent a picture of logs on PWS), there was a number of issues encountered.
 
-I'll research (i.e. google) the problem.
+There included, but were not limited to:
+Jira issue - Tar packaged grails application cannot resolve /index
+https://jira.grails.org/browse/GRAILS-12076
+
+Problems validating blank constraints with spock in a grails application
+http://stackoverflow.com/questions/19831034/problems-validating-blank-constraints-with-spock-in-a-grails-application
+
+Codehaus gone, which affected a lot of dependencies (incl. transitive dependencies) & plugins.
+http://www.codehaus.org/
+
+Not being able to deploy to PWS from GGTS.
+The latest version of GGTS has issues with deploying to PWS. The workaround is to deploy the war fro the CLI.
+I did this successfully. However the Jira issue mentioned above complicated things.
+
+** FINDINGS **
+Though Groovy the Grails framework are very exciting to learn and work with. I find that there's way too much broken dependencies and churn between versions. The removal of Pivotal sponsorship is seen by some as a bad thing, it's seen by others as a great thing. http://blog.pivotal.io/pivotal/news-2/groovy-2-4-and-grails-3-0-to-be-last-major-releases-under-pivotal-sponsorship
+Personally I would not comfortable with developing enterprise software with Grails & Groovy until the issues are overcome.
+My experience with it has been mixed. I can see the benefit of convention over configuration on steroids, but the many interdependent technologies require a strong and committed user-base & a big developer mindshare.
 
 Kind regards,
 
